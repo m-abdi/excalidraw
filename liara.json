@@ -1,5 +1,12 @@
 {
     "platform": "docker",
+    "image": "excalidraw/excalidraw",
     "app": "excalidraw",
-    "port": 80
+    "port": 80,
+    "disks": [
+        {
+          "name": "cache",
+          "mountTo": "/var/cache/"
+        }
+      ]
 }
